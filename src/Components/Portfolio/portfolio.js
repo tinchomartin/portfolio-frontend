@@ -11,17 +11,20 @@ function Portfolio() {
     });
   }, [setProjects]);
   return (
-    <div className="card-portfolio">
-      {projects.length > 0 &&
-        projects.map((project, i) => (
-          <div className="individual-portfolio" key={i}>
-            <h1>{project.name}</h1>
-            <img src={project.image} alt="imagen-proyecto" />
-            <p>{project.description}</p>
-            <a href={project.link}>Visitar</a>
-          </div>
-        ))}
-    </div>
+    <React.Fragment>
+      <div className="card-portfolio">
+        {projects.length > 0 &&
+          projects.map((project, i) => (
+            <div className="individual-portfolio" key={i}>
+              <h1>{project.name}</h1>
+              <img src={project.image} alt="imagen-proyecto" />
+              <p>{project.description}</p>
+              <a href={project.link}>Visitar</a>
+              <div className="dos"></div>
+            </div>
+          ))}
+      </div>
+    </React.Fragment>
   );
 }
 

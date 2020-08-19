@@ -1,0 +1,12 @@
+.About {
+  background-color: #4056f4;
+  margin: 0;
+}
+
+.uno {
+  height: 80px;
+  width: 100%;
+
+  background-color: #5bc0be;
+  clip-path: polygon(100% 0, 100% 100%, 0% 100%);
+}

@@ -1,0 +1,14 @@
+.card-portfolio {
+  background-color: #5bc0be;
+}
+img {
+  height: auto;
+  width: 50%;
+}
+
+.dos {
+  height: 80px;
+  width: 100%;
+  background-color: #2a2b2e;
+  clip-path: polygon(19% 0, 70% 100%, 100% 51%, 0 54%);
+}
