@@ -1,0 +1,31 @@
+nav {
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  background-color: #f2dda4;
+  top: 0;
+  opacity: 95%;
+  z-index: 2;
+}
+
+.active {
+  visibility: visible;
+  transition: all 0.5s;
+}
+
+.hidden {
+  visibility: hidden;
+  transition: all 0.5s;
+  transform: translateY(-100%);
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+}
