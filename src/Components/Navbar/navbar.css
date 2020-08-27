@@ -4,7 +4,7 @@ nav {
   width: 100%;
   background-color: #f2dda4;
   top: 0;
-  opacity: 95%;
+  opacity: 95% !important;
   z-index: 2;
 }
 
