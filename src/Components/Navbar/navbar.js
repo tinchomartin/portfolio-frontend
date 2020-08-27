@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./navbar.css";
 class Navbar extends React.Component {
   state = {
