@@ -1,0 +1,37 @@
+.skills-card {
+  width: 100%;
+}
+
+.skills-card h1 {
+  margin-bottom: 0;
+}
+
+.skills-card p {
+  margin-top: 0;
+}
+
+.container-logos {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box-icon {
+  height: auto;
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.container-logos i {
+  color: white;
+
+  font-size: 3.5rem;
+}
+
+i p {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+}

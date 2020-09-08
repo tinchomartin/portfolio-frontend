@@ -19,13 +19,13 @@ function About() {
         </div>
         <div className="Descripcion">
           <h1>Sitio en desarrollo</h1>
-          <h1>{information.name}</h1>
+          <h1>Hola! mi nombre es {information.name}</h1>
           <h2>{information.profession}</h2>
           <p>{information.about_me}</p>
-          <ul className="Skills">
+          {/* <ul className="Skills">
             {information.skills && //con hooks, primero hay que chequear que el item exista antes del map
               information.skills.map((skill, i) => <p key={i}>{skill}</p>)}
-          </ul>
+          </ul> */}
         </div>
         <div className="uno"></div>
       </div>

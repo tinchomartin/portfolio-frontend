@@ -1,10 +1,20 @@
 nav {
-  height: 80px;
+  height: 90px;
   position: fixed;
   width: 100%;
   background-color: rgba(242, 221, 164, 95%);
   top: 0;
   z-index: 2;
+  clip-path: polygon(
+    0 0,
+    0 58px,
+    45% 48px,
+    55% 61px,
+    65.1% 40px,
+    73% 53px,
+    100% 53px,
+    100% 0
+  );
 }
 
 .active {
