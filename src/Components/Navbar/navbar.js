@@ -23,7 +23,6 @@ class Navbar extends React.Component {
   };
 
   render() {
-    console.log(this.state);
     return (
       <nav className={this.state.show ? "active" : "hidden"}>
         <ul>
