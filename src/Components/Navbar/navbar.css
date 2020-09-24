@@ -2,7 +2,7 @@ nav {
   height: 90px;
   position: fixed;
   width: 100%;
-  background-color: rgba(242, 221, 164, 95%);
+  background-color: #e4e3e3;
   top: 0;
   z-index: 2;
   clip-path: polygon(
@@ -37,4 +37,5 @@ nav ul {
 
 li {
   list-style: none;
+  padding-bottom: 2%;
 }

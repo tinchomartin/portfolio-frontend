@@ -26,7 +26,6 @@ class Navbar extends React.Component {
     return (
       <nav className={this.state.show ? "active" : "hidden"}>
         <ul>
-          <li>Inicio</li>
           <li>Sobre mí</li>
           <li>Proyectos</li>
           <li>Habilidades</li>

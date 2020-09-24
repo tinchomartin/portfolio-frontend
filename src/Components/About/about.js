@@ -1,25 +1,31 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Loading from "../Loading/loading.js";
 import "./about.css";
 
 function About() {
   const [information, setInformation] = useState({});
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    axios
-      .get("https://port-backend.herokuapp.com/about")
-      .then((res) => setInformation(res.data[0]));
+    setLoading(true);
+    axios.get("https://port-backend.herokuapp.com/about").then((res) => {
+      setLoading(false);
+      setInformation(res.data[0]);
+    });
   }, [setInformation]); //setinformation permite que la ejecución se realice cada vez que cambia de valor
 
   return (
     <React.Fragment>
       <div className="About">
-        <div className="div-foto">
-          {/* <img className="foto-perfil" src={information.photo} alt="" /> */}
-        </div>
+        <h1 className="desarrollo">
+          Sitio en desarrollo <i className="fas fa-pencil-ruler"></i>
+        </h1>
+        
+
         <div className="Descripcion">
-          <h1>Sitio en desarrollo</h1>
-          <h1>Hola! mi nombre es {information.name}</h1>
+          <h1>Hola! soy {loading && <Loading />}{information.name}</h1>
+
           <h2>{information.profession}</h2>
           <p>{information.about_me}</p>
           {/* <ul className="Skills">

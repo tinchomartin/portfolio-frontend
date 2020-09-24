@@ -1,14 +1,53 @@
 .card-portfolio {
-  background-color: #5bc0be;
+  background-color: #f9f7f7;
+  color: #3f72af;
+}
+
+.card-portfolio p {
+  width: 50%;
+  margin: 1rem auto;
+  text-align: start;
 }
 img {
   height: auto;
   width: 50%;
+  margin-bottom: 2rem;
+}
+
+.btn-link {
+  margin-top: 50px;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: 700;
+  background: linear-gradient(
+    90deg,
+    rgba(63, 114, 175, 1) 50%,
+    rgba(249, 247, 247, 1) 50%
+  );
+  background-size: 200% 100%;
+  color: #3f72af;
+  border: 3px solid #3f72af;
+  transition: all ease 0.3s;
+  background-position: right;
+}
+
+.btn-link:hover {
+  background-position: left;
+  color: #f9f7f7;
+}
+
+.btn-link:active {
+  border-color: darkslategrey;
 }
 
 .dos {
   height: 80px;
   width: 100%;
-  background-color: #2a2b2e;
+  margin-bottom: -0.02%;
+  background-color: #dbe2ef;
   clip-path: polygon(32% 95%, 100% 35%, 100% 100%, 0 100%, 0 35%);
+}
+
+.individual-portfolio:last-child .dos {
+  background-color: #3f72af;
 }
