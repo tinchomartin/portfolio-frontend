@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Mada&display=swap");
+@font-face {
+  font-family: "Mada", sans-serif;
+  font-display: swap;
+  src: local("Mada"),
+    url("https://fonts.googleapis.com/css2?family=Mada&display=swap");
+}
+
 body {
   margin: 0;
-
   font-family: "Mada", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }

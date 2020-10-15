@@ -1,3 +1,9 @@
+@media screen and (max-width: 500px) {
+  .About {
+    padding-top: 0 !important;
+  }
+}
+
 .About {
   background-color: #3f72af;
   color: #f9f7f7;
@@ -6,9 +12,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-.desarrollo {
-  width: 50%;
 }
 
 .Descripcion {

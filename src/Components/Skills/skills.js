@@ -12,7 +12,7 @@ function Habilidades() {
   }, [setSkills]);
 
   return (
-    <div className="skills-card">
+    <div className="skills-card" id="skills-card">
       <h1>Habilidades y herramientas</h1>
       <p>Utilizadas para darle vida a mis proyectos</p>
       <div className="container-logos">

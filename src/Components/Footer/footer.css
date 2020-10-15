@@ -1,4 +1,19 @@
 .card-footer {
   background-color: hsl(232, 19%, 15%);
   color: #3f72af;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+}
+
+.card-footer a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #3f72af;
+}
+
+.card-footer i {
+  font-size: 1.5rem;
+  margin: 0 10px;
 }

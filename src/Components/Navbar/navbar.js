@@ -1,5 +1,7 @@
 import React from "react";
 import "./navbar.css";
+import { Link } from "react-scroll";
+
 class Navbar extends React.Component {
   state = {
     show: true,
@@ -26,10 +28,51 @@ class Navbar extends React.Component {
     return (
       <nav className={this.state.show ? "active" : "hidden"}>
         <ul>
-          <li>Sobre mí</li>
-          <li>Proyectos</li>
-          <li>Habilidades</li>
-          <li>Contacto</li>
+          <li>
+            <Link
+              activeClass="active"
+              to="About"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              Sobre mí
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClass="active"
+              to="card-portfolio"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              Proyectos
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              activeClass="active"
+              to="skills-card"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              Habilidades
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClass="active"
+              to="card-footer"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              Contacto
+            </Link>
+          </li>
         </ul>
       </nav>
     );

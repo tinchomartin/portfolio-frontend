@@ -17,14 +17,12 @@ function About() {
 
   return (
     <React.Fragment>
-      <div className="About">
-        <h1 className="desarrollo">
-          Sitio en desarrollo <i className="fas fa-pencil-ruler"></i>
-        </h1>
-        
-
+      <div className="About" id="About">
         <div className="Descripcion">
-          <h1>Hola! soy {loading && <Loading />}{information.name}</h1>
+          <h1>
+            Hola! soy {loading && <Loading />}
+            {information.name}
+          </h1>
 
           <h2>{information.profession}</h2>
           <p>{information.about_me}</p>
