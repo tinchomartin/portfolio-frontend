@@ -20,10 +20,10 @@ function About() {
       <div className="About" id="About">
         <div className="Descripcion">
           <h1>
-            Hola! soy {loading && <Loading />}
-            {information.name}
+            Hola! Me llamo Martin Garay
+            
           </h1>
-
+{loading && <Loading />}
           <h2>{information.profession}</h2>
           <p>{information.about_me}</p>
           {/* <ul className="Skills">
