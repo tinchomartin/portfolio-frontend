@@ -9,7 +9,7 @@ function Portfolio() {
 
   useEffect(() => {
     setLoading(true);
-    axios.get("https://port-backend.herokuapp.com/portfolio").then((res) => {
+    axios.get("https://portfolio-be-0ejd.onrender.com/portfolio").then((res) => {
       setProjects(res.data);
       setLoading(false);
     });
