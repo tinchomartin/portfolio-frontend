@@ -9,7 +9,7 @@ function About() {
 
   useEffect(() => {
     setLoading(true);
-    axios.get("https://port-backend.herokuapp.com/about").then((res) => {
+    axios.get("https://portfolio-be-0ejd.onrender.com/about").then((res) => {
       setLoading(false);
       setInformation(res.data[0]);
     });
