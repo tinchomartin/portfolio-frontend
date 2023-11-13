@@ -6,7 +6,7 @@ function Habilidades() {
   const [skills, setSkills] = useState({});
 
   useEffect(() => {
-    axios.get("https://port-backend.herokuapp.com/skills").then((res) => {
+    axios.get("https://portfolio-be-0ejd.onrender.com/skills").then((res) => {
       setSkills(res.data);
     });
   }, [setSkills]);
